@@ -1,19 +1,17 @@
-/*html { 
-background: url("images/contemporary_china.png") no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}*/
+
 
 .jumbotron {
 	text-align: center;
+	font-family: 'Lakki Reddy', cursive;
+	font-size: 100px;
 }
 
 .col-md-12 {
+	
 	text-align: center;
 	font-size: 30px;
-	border: solid white 15px;
+	margin: 10px;
+	font-family: 'Josefin Sans', sans-serif;
 
 }
 
@@ -23,6 +21,12 @@ background-size: cover;
 
 .col-md-3 {
 	margin-top: 30px;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-size: 30px;
+
+
+	
 
 }
 

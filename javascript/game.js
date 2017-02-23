@@ -1,4 +1,4 @@
-//Global Variables
+//Variables
 //=================================================================
 var computerNum = Math.floor(Math.random() * 100 + 20);
 var userNum = 0;
@@ -50,17 +50,31 @@ var lossCount =0;
 //=================================================================
 $(document).ready(function() {
 
+//$("#fade").hide(0).delay(500).fadeIn(3000);
+
 gameStart();
 
-//displays the wins, losses, and total score
+//Displays the wins, losses, and total score
 $("#wins").text("Wins" + " " + winCount);
 $("#losses").text("Losses" + " " + lossCount);
 //$("#totalScore").text("Total Score" + " " + scoreCount);
 
 
-
+//Assign click to corresponding button
 $("#gemBtn1").on('click', function() {
 	userNum = userNum + gem1;
+	$("#playerNum").text("You've collected" + " " + userNum + " " + "crystals");
+	//if we win execute win game function
+	  if (userNum === computerNum) {
+	  	winGame();
+	 //if we lose execute lose game function
+	  }else if(userNum > computerNum) {
+	  	loseGame();
+	  }
+});
+
+$("#gemBtn2").on('click', function() {
+	userNum = userNum + gem2;
 	console.log(gem1);
 	$("#playerNum").text("You've collected" + " " + userNum + " " + "crystals");
 	  if (userNum === computerNum) {
@@ -68,11 +82,28 @@ $("#gemBtn1").on('click', function() {
 	  }else if(userNum > computerNum) {
 	  	loseGame();
 	  }
+});
 
+$("#gemBtn3").on('click', function() {
+	userNum = userNum + gem3;
+	console.log(gem1);
+	$("#playerNum").text("You've collected" + " " + userNum + " " + "crystals");
+	  if (userNum === computerNum) {
+	  	winGame();
+	  }else if(userNum > computerNum) {
+	  	loseGame();
+	  }
+});
 
-	  
-
-
+$("#gemBtn4").on('click', function() {
+	userNum = userNum + gem4;
+	console.log(gem1);
+	$("#playerNum").text("You've collected" + " " + userNum + " " + "crystals");
+	  if (userNum === computerNum) {
+	  	winGame();
+	  }else if(userNum > computerNum) {
+	  	loseGame();
+	  }
 });
 
 });

@@ -1,9 +1,10 @@
 
 
 .jumbotron {
-	text-align: center;
 	font-family: 'Lakki Reddy', cursive;
+	text-align: center;
 	font-size: 100px;
+	/*background-image: url(../images/"bright-stars.jpg");*/
 }
 
 .col-md-12 {
@@ -24,9 +25,5 @@
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	font-size: 30px;
-
-
-	
-
 }
 

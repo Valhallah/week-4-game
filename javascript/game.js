@@ -29,13 +29,16 @@ var lossCount =0;
     gem2 = Math.floor(Math.random() * 9 + 1);
 	gem3 = Math.floor(Math.random() * 9 + 1);
 	gem4 = Math.floor(Math.random() * 9 + 1);
+	computerNum = Math.floor(Math.random() * 100 + 20);
  	userNum = 0;
+ 	$("#randomNum").text("We've collected" + " " + computerNum + " " + "crystals");
  }
 
 //Incriments wins 
  function winGame() {
  	winCount++;
  	$("#wins").text(winCount);
+ 	$("#wins").text("Wins" + " " + winCount);
  	resetGame();
  }
 
@@ -43,6 +46,7 @@ var lossCount =0;
  function loseGame() {
  	lossCount++;
  	$("#losses").text(lossCount);
+ 	$("#losses").text("Losses" + " " + lossCount);
  	resetGame();
  }
 
